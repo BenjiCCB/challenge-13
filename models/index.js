@@ -19,7 +19,7 @@ Category.hasMany(Product, {
 Product.belongsToMany(Tag, { through: ProjectTag });
 
 // Tags belongToMany Products (through ProductTag)
-Product.belongsToMany(Product, { through: ProjectTag });
+Tag.belongsToMany(Product, { through: ProjectTag });
 
 module.exports = {
   Product,
